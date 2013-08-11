@@ -1,0 +1,97 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bourbon (3.1.8)
+      sass (>= 3.2.0)
+      thor
+    capybara (2.1.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.6.3)
+    erubis (2.7.0)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    hike (1.2.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
+    mime-types (1.23)
+    mini_portile (0.5.1)
+    minitest (5.0.6)
+    minitest-wscolor (0.0.3)
+      minitest (>= 2.3.1)
+    multi_json (1.7.9)
+    multi_xml (0.5.5)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    oj (2.1.4)
+    posix-spawn (0.3.6)
+    puma (2.5.0)
+      rack (>= 1.1, < 2.0)
+    pygments.rb (0.5.2)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
+    rack (1.5.2)
+    rack-protection (1.5.0)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rake (10.1.0)
+    redcarpet (3.0.0)
+    redis (3.0.4)
+    safe_yaml (0.9.5)
+    sass (3.2.10)
+    shotgun (0.9)
+      rack (>= 1.0)
+    sinatra (1.4.3)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    sprockets (2.10.0)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sprockets-sass (1.0.1)
+      sprockets (~> 2.0)
+      tilt (~> 1.1)
+    thor (0.18.1)
+    tilt (1.4.1)
+    uglifier (2.1.2)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.0, >= 1.0.2)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
+    yajl-ruby (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bourbon
+  capybara
+  coffee-script
+  erubis
+  httparty
+  minitest
+  minitest-wscolor
+  multi_json
+  oj
+  puma
+  pygments.rb
+  rake
+  redcarpet
+  redis
+  safe_yaml
+  sass
+  shotgun
+  sinatra
+  sprockets
+  sprockets-sass
+  uglifier

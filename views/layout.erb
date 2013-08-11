@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= (@title && !@title.empty? ? @title : 'Spiros Gerokostas') %></title>
+</head>
+<body>
+	<header>
+		<h1>This is my personal website</h1>
+	</header>
+	<section>
+		<%= yield %>
+	</section>
+</body>
+</html>
