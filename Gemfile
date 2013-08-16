@@ -36,6 +36,8 @@ group :test do
 	gem 'minitest'
 	gem 'minitest-wscolor'
 	gem 'capybara'
+	gem 'simplecov', require: false
+	gem 'miniskirt', require: false
 end
 
 group :development do

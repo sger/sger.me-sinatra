@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (3.2.14)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -21,9 +24,12 @@ GEM
     httparty (0.11.0)
       multi_json (~> 1.0)
       multi_xml (>= 0.5.2)
+    i18n (0.6.5)
     kgio (2.8.0)
     mime-types (1.23)
     mini_portile (0.5.1)
+    miniskirt (1.2.1)
+      activesupport
     minitest (5.0.6)
     minitest-wscolor (0.0.3)
       minitest (>= 2.3.1)
@@ -49,6 +55,10 @@ GEM
     sass (3.2.10)
     shotgun (0.9)
       rack (>= 1.0)
+    simplecov (0.7.1)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.7.1)
+    simplecov-html (0.7.1)
     sinatra (1.4.3)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -83,6 +93,7 @@ DEPENDENCIES
   coffee-script
   erubis
   httparty
+  miniskirt
   minitest
   minitest-wscolor
   multi_json
@@ -94,6 +105,7 @@ DEPENDENCIES
   safe_yaml
   sass
   shotgun
+  simplecov
   sinatra
   sprockets
   sprockets-sass

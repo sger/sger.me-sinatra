@@ -2,6 +2,9 @@
 <html>
 <head>
 <title><%= (@title && !@title.empty? ? @title : 'Spiros Gerokostas') %></title>
+<link href="/assets/application.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:site_name" content="sger.me">
 </head>
 <body>
 	<header>
@@ -10,5 +13,8 @@
 	<section>
 		<%= yield %>
 	</section>
+	<footer>
+		<p>footer</p>
+	</footer>
 </body>
 </html>

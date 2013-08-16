@@ -12,7 +12,7 @@
 	<% if page > window %>
 	<% if page == window + 1 %>
 	<a href="/1">1</a>
-	<% (1.window).each do |i| %>
+	<% (1..window).each do |i| %>
 	<a href="/<%= i %>"><%= i %></a>
 	<% end %>
 	<span class="gap">&hellip;</span>
