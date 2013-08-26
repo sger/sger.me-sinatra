@@ -1,0 +1,40 @@
+section article {
+	margin-bottom: 6em;
+
+	header {
+		p {
+			color: #949494;
+			font-size: 0.9em;
+			margin-bottom: 0.25em;
+
+			a {
+				color: #949494;
+				border: 0;
+			}
+		}
+	}
+
+	ul, ol {
+		margin: 0 0 2em 0.5em;
+
+		li {
+			margin-left: 1em;
+		}
+	}
+
+	ul li {
+		list-style: disc;
+	}
+
+	ol li {
+		list-style: decimal;
+	}
+
+	ol li ol li {
+		list-style: lower-alpha;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}

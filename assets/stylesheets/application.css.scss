@@ -1,6 +1,207 @@
 @import "bourbon";
+@import "variables";
+@import "reset";
 
 section, header, footer, nav, article, aside, figure {
 	display: block;
 	width: 100%;
 }
+
+mark, time, meter, progress {
+	display: inline;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-family: 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.5em;
+	padding: 0 10px;
+	color: $text-color;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+
+	&:hover {
+		@include transition-property(border);
+		@include transition-duration(0.2s);
+		border-bottom: 1px solid;
+	}
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	background-color: $highlight-color;
+	padding: 0 0.1em;
+}
+
+i {
+	font-style: italic;
+}
+
+abbr {
+	border-bottom: 1px dashed;
+	cursor: help;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+hr {
+	margin: 0 auto 2em;
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	width: 60%;
+}
+
+blockquote {
+	border-left: 5px solid #ddd;
+	color: 888;
+	margin: 0 0 1em;
+	padding-left: 1em;
+
+	a {
+		color: #444;
+
+		&:hover {
+			color: $link_color;
+		}
+	}
+}
+
+small {
+	font-size: 0.8em;
+	color: #999;
+	margin-left: 0.2em;
+
+	a {
+		color: #444;
+
+		&:hover {
+			color: #2e80d3;
+		}
+	}
+}
+
+pre {
+	background-color: $code-background-color;
+	border: 1px solid $code-border-color;
+	color: #444;
+	font-family: $monaco;
+	font-size: 13px;
+	margin: 0 0 2em;
+	overflow: auto;
+	padding: 0.5em;
+
+	code {
+		backgroundc-color: $code-background-color;
+		border: medium none;
+		font-size: 1em;
+		padding: 0;
+	}
+}
+
+code {
+	background-color: $code-background-color;
+	border: 1px solid $code-border-color;
+	color: #444;
+	font-family: $monaco;
+	padding: 0 0.2em;
+	font-size: 0.8em;
+}
+
+h1 {
+	color: #000;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: 0.5em;
+}
+
+body > header h1 {
+	a, a:hover {
+		color: $red-color;
+		border: 0;
+	}
+}
+
+h2 {
+	font-size: 1.3em;
+	margin-bottom: 0.2em;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+h2, h3 {
+	a {
+		color: $text-color;
+		border: 0;
+	}
+}
+
+h4 {
+	color: #999;
+	font-weight: bold;
+	margin-bottom: 0.2em;
+}
+
+body > header, body > section, body > footer {
+	max-width: $width;
+	margin: 0 auto;
+}
+
+body > header {
+	color: #949494;
+	margin: 5em auto 4em;
+
+	p {
+		margin: 0;
+	}
+
+	@media #{$small-query} {
+		margin: 3em auto;
+	}
+}
+
+a.hire, a.hire:hover {
+	color: $red-color;
+}
+
+body > footer {
+	color: #aaa;
+	text-shadow: #fff 0 1px 0;
+	font-size: 0.8em;
+	text-align: center;
+	margin: 3em auto;
+
+	a {
+		color: #aaa;
+
+		&:hover {
+			color: $link-color;
+		}
+	}
+}
+
+@import "pagination";
+@import "mixins";
+@import "post";
+
+span.gray {
+	color: #777;
+}
+
