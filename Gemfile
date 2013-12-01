@@ -23,6 +23,8 @@ gem 'redis'
 gem 'multi_json'
 gem 'oj'
 
+gem 'rb-fsevent', '~> 0.9'
+
 gem 'httparty', require: false
 
 gem 'sass'
