@@ -33,6 +33,7 @@ a {
 		@include transition-property(border);
 		@include transition-duration(0.2s);
 		border-bottom: 1px solid;
+		color: $link-color;
 	}
 }
 
@@ -130,7 +131,7 @@ h1 {
 
 body > header h1 {
 	a, a:hover {
-		color: $black-color;
+		color: $gray-color;
 		border: 0;
 	}
 }
