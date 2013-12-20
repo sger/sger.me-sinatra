@@ -1,5 +1,3 @@
-desc 'Push to GitHub And Heroku'
-
 task :deploy do
 	unless `git status -s`.length == 0
     puts 'Commit any changes.'
@@ -8,4 +6,8 @@ task :deploy do
 
   	`git push origin master`
   	`git push heroku master`
+
+    `heroku run rake clean`
+    `heroku run rake import`
+
 end
