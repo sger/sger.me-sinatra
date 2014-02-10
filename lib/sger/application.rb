@@ -6,8 +6,12 @@ module Sger
 
 		PAGE_SIZE = 3
 
+		get '/books' do
+			erb :books
+		end
+
 		get %r{/$|/(\d+)$} do |page|
-			
+
 			page = (page || 1).to_i
 			start_index = (page - 1) * PAGE_SIZE
 			total_pages = (Sger.redis.zcard('sorted-posts').to_f / PAGE_SIZE.to_f).ceil.to_i

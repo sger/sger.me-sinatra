@@ -1,4 +1,5 @@
 @import "bourbon";
+@import "neat";
 @import "variables";
 @import "reset";
 
@@ -204,5 +205,19 @@ body > footer {
 
 span.gray {
 	color: #777;
+}
+
+section.books {
+  @include outer-container;
+
+  aside {
+    @include span-columns(2);
+    background-color: #ff0000;
+  }
+
+  article {
+    @include span-columns(8);
+    background-color: #ff0000;
+  }
 }
 

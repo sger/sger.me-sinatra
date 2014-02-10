@@ -30,6 +30,7 @@ gem 'httparty', require: false
 gem 'sass'
 gem 'sprockets-sass'
 gem 'bourbon'
+gem 'neat'
 
 gem 'coffee-script'
 gem 'uglifier'
