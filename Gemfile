@@ -35,6 +35,8 @@ gem 'neat'
 gem 'coffee-script'
 gem 'uglifier'
 
+gem 'psych', '~> 2.0.5'
+
 group :test do
 	gem 'minitest'
 	gem 'minitest-wscolor'
